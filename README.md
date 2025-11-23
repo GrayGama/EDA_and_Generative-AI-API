@@ -1,4 +1,4 @@
-# NHI Life Insurance Claims Forecast & Chat Assistant
+# Insurance Claims Forecast & Chat Assistant
 
 This workspace contains:
 - Data engineering notebook (`EDA_feature_eng.ipynb`) that builds features and exports `EDA_output.csv`.
