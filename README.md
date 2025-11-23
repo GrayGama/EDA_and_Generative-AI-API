@@ -103,12 +103,7 @@ print(scenario["impact"])  # per-target changes
 - Plug additional models: wrap in `MultiOutputRegressor` if scikit-learn; follow existing pattern.
 - Integrate ARIMA fully: adapt `forecast_model_selec` to return a dict of per-target ARIMA results.
 
-## 8. Security & Data Governance
-- Do not commit raw PHI or sensitive personal data; current dataset appears aggregated and anonymized.
-- Keep API keys solely in environment variables.
-- Review output before sharing externally.
-
-## 9. Project Structure
+## 8. Project Structure
 ```
 Cathay Life Insurance/
 ├─ data.csv
@@ -118,17 +113,3 @@ Cathay Life Insurance/
 ├─ GenAI_API.ipynb
 └─ README.md
 ```
-
-## 10. Quickstart Recap
-```pwsh
-# Set key
-$env:OPENAI_API_KEY = "sk-..."
-# Install deps
-uv pip install pandas numpy scikit-learn xgboost torch statsmodels openai torchmetrics matplotlib seaborn
-# Launch Jupyter
-jupyter notebook
-```
-Then run notebook cells in order: imports/context → tools → model init → chat steps.
-
----
-Questions or next improvements (tests, packaging, requirements file)? Just ask and I can scaffold them.
